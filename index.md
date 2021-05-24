@@ -1,3 +1,5 @@
+[Projects](https://romchalee-a.github.io/portfolio/)
+
 Apprentice Chef Case Study - Machine Learning | Python
 
 **Introduction**
