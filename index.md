@@ -455,7 +455,7 @@ with the model.The most important feature is 'Valid Email' following by
 ------------------------------------------------------------------------------ 
 ```
 
-![Figure 1](https://github.com/romchalee-a/Apprentice-Chef-Case-Study/blob/main/figure1_APC.png)
+![Figure 1](https://github.com/romchalee-a/Apprentice-Chef-Case-Study/blob/main/images/figure1_APC.png)
 
 -------------------------------------------------------------------------------------------------------
 Code for printing Appendix
