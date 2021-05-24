@@ -441,8 +441,11 @@ with the model.The most important feature is 'Valid Email' following by
 'Number Of Names'.
 ------------------------------------------------------------------------------ 
 ```
+![Figure 1](https://github.com/romchalee-a/Apprentice-Chef-Case-Study/blob/main/figure1_APC.png)
 
-- Coding for printing Appendix
+-------------------------------------------------------------------------------------------------------
+Code for printing Appendix
+
 ```
 # Table 1 Correlation
 ###############################
