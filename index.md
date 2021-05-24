@@ -9,6 +9,7 @@ The two main goals of this following Report are to investigate factors that affe
 **1  Predicting Revenue**
 
 - Data Preparation
+
 ```
 #############################################
 # import necessary libraries
@@ -46,9 +47,10 @@ dataset.columns = dataset.columns.str.lower()
 pd.set_option('display.max_rows', 500)
 pd.set_option('display.max_columns', 500)
 pd.set_option('display.width', 1000)
-
 ```
+
 - Featur Engineering
+
 ```
 #############################################
 # Feature Engineering
@@ -134,7 +136,9 @@ for val in lr_model_values:
     lr_model_lst.append(val)
    
 ```
+
 1.1 OLS Regression Model Output
+
 ```
 OLS Regression Model Output
 ------------------------------------------------------------------------------  
@@ -160,6 +164,7 @@ The strongest impact feature
  log_avg_prep_vid_time          0.58
  
 ```
+
 **1.2 Interpreting Result**
 
 With the regression analysis, 80.1% (R-Square) of the total variance is explained by the model. Average time in seconds of meal preparation video has the strongest impact on revenue as well as highest correlation (shown in Table 1). We could say that every additional one-percent increase in the average time of the video is associated with about a 0.58 percent change in revenue.
@@ -167,6 +172,7 @@ With the regression analysis, 80.1% (R-Square) of the total variance is explaine
 **2. Predicting Cross Sell Success with Classification Tree Model**
 
 - Feature Engineering
+
 ```
 #############################################
 # Feature Engineering
@@ -390,6 +396,7 @@ def plot_feature_importances(model, train, export = False):
         plt.savefig('Tree_Leaf_50_Feature_Importance.png')
 
 ```
+
 **2.1 Pruned Tree Model Output**
 
 ```
@@ -399,6 +406,7 @@ Pruned Tree Model Output
  Pruned Tree      0.736              0.748             0.786  (93, 63, 41, 290)
 ------------------------------------------------------------------------------ 
 ```
+
 **2.2 Interpreting Result**
 
 From the model, 73.6% (AUC Score) of the model prediction result was accurately classified customers who accepted and not accepted the campaign. The most important factor describing customers who likely to subscribe to the campaign is customers whose registered email are either personal or professional email domain. The second is a number of names specified by a count after a split of the space bar (Shown in Figure 1). However, the number of names needed more investigation whether the length of the name refers to nationality, randomness, or any possible factors.
@@ -412,6 +420,7 @@ To improve the acquisition for subscribers of the Half-Way-There Campaign, Appre
 **Appendix**
 
 **Table 1**
+
 ```
 Table 1
 ------------------------------------------------------------------------------  
@@ -432,7 +441,9 @@ cross_sell_success                      0.01
 contacts_w_customer_service            -0.04
 log_complain_rate                      -0.57
 ```
+
 **Figure 1**
+
 ```
 Figure 1
 ------------------------------------------------------------------------------  
@@ -441,6 +452,7 @@ with the model.The most important feature is 'Valid Email' following by
 'Number Of Names'.
 ------------------------------------------------------------------------------ 
 ```
+
 ![Figure 1](https://github.com/romchalee-a/Apprentice-Chef-Case-Study/blob/main/figure1_APC.png)
 
 -------------------------------------------------------------------------------------------------------
